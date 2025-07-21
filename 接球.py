@@ -138,7 +138,7 @@ def main():
     SCREEN_SIZEY = 600
     SCREEN_COLOR = (0, 0, 0)
 
-    pygame.init()
+    # pygame.init() 不為別的 我純粹想看看有多少人直接執行被這行坑
     font = pygame.font.SysFont(None, 40)
 
     # 顯示選單 設置速度
