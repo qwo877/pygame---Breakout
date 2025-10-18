@@ -5,7 +5,6 @@ import random
 
 pygame.display.set_caption("qwo的遊戲")
 
-
 # 球
 class Ball(object):
     def __init__(self, canvas, pos, radius):
@@ -34,7 +33,6 @@ class Paddle(object):
     def update(self):
         if self.visible:
             self.pygame.draw.rect(self.canvas, self.color, self.rect)
-
 
 # 方塊
 class Block(object):
@@ -239,5 +237,3 @@ def main():
         clock.tick(120)
 if __name__ == "__main__":
     main()
-    
-
