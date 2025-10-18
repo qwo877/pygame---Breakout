@@ -1,5 +1,5 @@
 import sys
-import pygame #pip install pygame
+import pygame
 from pygame.locals import QUIT
 import random
 
@@ -237,3 +237,4 @@ def main():
         clock.tick(120)
 if __name__ == "__main__":
     main()
+
