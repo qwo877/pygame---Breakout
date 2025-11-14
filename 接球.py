@@ -1,10 +1,9 @@
 import sys
-import pygame #pip install pygame
+import pygame
 from pygame.locals import QUIT
 import random
 
 pygame.display.set_caption("qwo的遊戲")
-
 
 # 球
 class Ball(object):
@@ -34,7 +33,6 @@ class Paddle(object):
     def update(self):
         if self.visible:
             self.pygame.draw.rect(self.canvas, self.color, self.rect)
-
 
 # 方塊
 class Block(object):
@@ -138,7 +136,7 @@ def main():
     SCREEN_SIZEY = 600
     SCREEN_COLOR = (0, 0, 0)
 
-    # pygame.init() 不為別的 我純粹想看看有多少人直接執行被這行坑
+    pygame.init()
     font = pygame.font.SysFont(None, 40)
 
     # 顯示選單 設置速度
@@ -239,4 +237,4 @@ def main():
         clock.tick(120)
 if __name__ == "__main__":
     main()
-    
+
